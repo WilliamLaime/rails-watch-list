@@ -7,12 +7,12 @@
     <div class="cards">
       <% @lists.each do |list| %>
         <div class="card-category">
-          <%= link_to list.name, list_path(list)  %>
+          <%= link_to list.name, list_path(list) %>
         </div>
-      <% end  %>
+      <% end %>
   </div>
-  <% else  %>
-    Vite, tu n'as pas du liste ,ajoute une liste <br/>
+  <% else %>
+    Vite, tu n'as pas du liste ,ajoute une liste <br>
     <%= link_to "Ajoute une liste", new_list_path, class: 'btn btn-primary' %>
-  <% end  %>
+  <% end %>
 </div>
